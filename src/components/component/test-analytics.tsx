@@ -28,6 +28,7 @@ import { Calendar } from "@/components/ui/calendar"
 import { Card, CardHeader, CardDescription, CardTitle, CardContent } from "@/components/ui/card"
 import { CartesianGrid, XAxis, Area, AreaChart, Bar, BarChart, Line, LineChart, Pie, PieChart } from "recharts"
 import { ChartTooltipContent, ChartTooltip, ChartContainer } from "@/components/ui/chart"
+import Image from "next/image"
 
 export function TestAnalytics() {
   return (
@@ -119,7 +120,7 @@ export function TestAnalytics() {
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <Button variant="outline" size="icon" className="overflow-hidden rounded-full">
-              <img
+            <Image
                 src="/placeholder.svg"
                 width={36}
                 height={36}
@@ -242,7 +243,7 @@ export function TestAnalytics() {
   )
 }
 
-function AreachartstackedChart(props) {
+function AreachartstackedChart(props:any) {
   return (
     <div {...props}>
       <ChartContainer
@@ -305,7 +306,7 @@ function AreachartstackedChart(props) {
 }
 
 
-function ArrowLeftIcon(props) {
+function ArrowLeftIcon(props:any) {
   return (
     <svg
       {...props}
@@ -326,7 +327,7 @@ function ArrowLeftIcon(props) {
 }
 
 
-function BarchartChart(props) {
+function BarchartChart(props:any) {
   return (
     <div {...props}>
       <ChartContainer
@@ -366,7 +367,7 @@ function BarchartChart(props) {
 }
 
 
-function CalendarClockIcon(props) {
+function CalendarClockIcon(props:any) {
   return (
     <svg
       {...props}
@@ -391,7 +392,7 @@ function CalendarClockIcon(props) {
 }
 
 
-function LandmarkIcon(props) {
+function LandmarkIcon(props:any) {
   return (
     <svg
       {...props}
@@ -416,7 +417,7 @@ function LandmarkIcon(props) {
 }
 
 
-function LayoutDashboardIcon(props) {
+function LayoutDashboardIcon(props:any) {
   return (
     <svg
       {...props}
@@ -439,7 +440,7 @@ function LayoutDashboardIcon(props) {
 }
 
 
-function LineChartIcon(props) {
+function LineChartIcon(props:any) {
   return (
     <svg
       {...props}
@@ -460,7 +461,7 @@ function LineChartIcon(props) {
 }
 
 
-function LinechartChart(props) {
+function LinechartChart(props:any) {
   return (
     <div {...props}>
       <ChartContainer
@@ -503,7 +504,7 @@ function LinechartChart(props) {
 }
 
 
-function MenuIcon(props) {
+function MenuIcon(props:any) {
   return (
     <svg
       {...props}
@@ -525,7 +526,7 @@ function MenuIcon(props) {
 }
 
 
-function PackageIcon(props) {
+function PackageIcon(props:any) {
   return (
     <svg
       {...props}
@@ -548,7 +549,7 @@ function PackageIcon(props) {
 }
 
 
-function PiechartcustomChart(props) {
+function PiechartcustomChart(props:any) {
   return (
     <div {...props}>
       <ChartContainer
@@ -598,7 +599,7 @@ function PiechartcustomChart(props) {
 }
 
 
-function ShoppingCartIcon(props) {
+function ShoppingCartIcon(props:any) {
   return (
     <svg
       {...props}
@@ -620,7 +621,7 @@ function ShoppingCartIcon(props) {
 }
 
 
-function UsersIcon(props) {
+function UsersIcon(props:any) {
   return (
     <svg
       {...props}

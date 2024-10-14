@@ -2,7 +2,6 @@
 'use client'
 import Link from "next/link"
 import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuItem } from "@/components/ui/dropdown-menu"
-// import { Button } from "@/components/ui/button"
 import { TooltipProvider, Tooltip, TooltipTrigger, TooltipContent } from "@/components/ui/tooltip"
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card"
 import * as React from 'react';
@@ -13,6 +12,7 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import { IntegrateWithCrm } from "./IntegrateWithCrm"
+import Image from "next/image"
 
 export function AddIntegrations() {
   const [open, setOpen] = React.useState(false)
@@ -69,7 +69,7 @@ export function AddIntegrations() {
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="outlined" className="overflow-hidden rounded-full">
-                <img
+                <Image
                   src="/placeholder.svg"
                   width={36}
                   height={36}

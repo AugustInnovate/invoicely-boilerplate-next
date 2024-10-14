@@ -237,7 +237,7 @@ export function UserDashboardSecond() {
   )
 }
 
-function MoveHorizontalIcon(props) {
+function MoveHorizontalIcon(props:any) {
   return (
     <svg
       {...props}

@@ -88,7 +88,7 @@ export function AtlasUI() {
   )
 }
 
-function CloudUploadIcon(props) {
+function CloudUploadIcon(props:any) {
   return (
     <svg
       {...props}
@@ -110,7 +110,7 @@ function CloudUploadIcon(props) {
 }
 
 
-function FileIcon(props) {
+function FileIcon(props:any) {
   return (
     <svg
       {...props}

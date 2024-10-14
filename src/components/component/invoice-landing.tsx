@@ -26,6 +26,7 @@ To read more about using these font, please visit the Next.js documentation:
 import Link from "next/link"
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 export function InvoiceLanding() {
   return (
@@ -80,7 +81,7 @@ export function InvoiceLanding() {
                   </Link>
                 </div>
               </div>
-              <img
+              <Image
                 src="/placeholder.svg"
                 width="550"
                 height="310"
@@ -131,7 +132,7 @@ export function InvoiceLanding() {
                   </li>
                 </ul>
               </div>
-              <img
+              <Image
                 src="/placeholder.svg"
                 width="550"
                 height="310"
@@ -186,7 +187,7 @@ export function InvoiceLanding() {
             <div className="divide-y rounded-lg border">
               <div className="grid w-full grid-cols-1 items-stretch justify-center divide-x md:grid-cols-3">
                 <div className="mx-auto flex w-full flex-col items-center justify-center p-4 sm:p-8 space-y-4">
-                  <img
+                  <Image
                     src="/placeholder.svg"
                     width="80"
                     height="80"
@@ -204,7 +205,7 @@ export function InvoiceLanding() {
                   </p>
                 </div>
                 <div className="mx-auto flex w-full flex-col items-center justify-center p-4 sm:p-8 space-y-4">
-                  <img
+                  <Image
                     src="/placeholder.svg"
                     width="80"
                     height="80"
@@ -222,7 +223,7 @@ export function InvoiceLanding() {
                   </p>
                 </div>
                 <div className="mx-auto flex w-full flex-col items-center justify-center p-4 sm:p-8 space-y-4">
-                  <img
+                  <Image
                     src="/placeholder.svg"
                     width="80"
                     height="80"
@@ -315,7 +316,7 @@ export function InvoiceLanding() {
                       <CheckIcon className="h-5 w-5 text-green-500" />
                       <p>Advanced reporting and analytics</p>
                     </li>
-                    <li className />
+                    <li />
                   </ul>
                 </CardContent>
               </Card>
@@ -327,7 +328,7 @@ export function InvoiceLanding() {
   )
 }
 
-function CheckIcon(props) {
+function CheckIcon(props:any) {
   return (
     <svg
       {...props}
@@ -347,7 +348,7 @@ function CheckIcon(props) {
 }
 
 
-function MountainIcon(props) {
+function MountainIcon(props:any) {
   return (
     <svg
       {...props}

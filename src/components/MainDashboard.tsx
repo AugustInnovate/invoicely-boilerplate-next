@@ -82,6 +82,8 @@ const OptimizedHeader = memo(() => (
   </header>
 ));
 
+OptimizedHeader.displayName = "OptimizedHeader";
+
 const MainDashboard = () => {
   return (
     <div className="flex flex-col min-h-screen">

@@ -20,6 +20,7 @@ To read more about using these font, please visit the Next.js documentation:
 import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 export function AtlasPO() {
   return (
@@ -43,7 +44,7 @@ export function AtlasPO() {
           </div>
           <div className="grid grid-cols-3 gap-4">
             <div className="bg-muted rounded-md overflow-hidden aspect-square">
-              <img
+              <Image
                 src="/placeholder.svg"
                 alt="File Preview"
                 width={200}
@@ -53,7 +54,7 @@ export function AtlasPO() {
               />
             </div>
             <div className="bg-muted rounded-md overflow-hidden aspect-square">
-              <img
+              <Image
                 src="/placeholder.svg"
                 alt="File Preview"
                 width={200}
@@ -63,7 +64,7 @@ export function AtlasPO() {
               />
             </div>
             <div className="bg-muted rounded-md overflow-hidden aspect-square">
-              <img
+              <Image
                 src="/placeholder.svg"
                 alt="File Preview"
                 width={200}

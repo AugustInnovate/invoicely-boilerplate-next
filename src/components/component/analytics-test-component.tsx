@@ -29,6 +29,7 @@ import UsersIcon from "../icons/UserIcon";
 import AnalyticsCard from '../analytics-component/AnalyticsCard';
 import { cardActionAreaClasses } from '@mui/material';
 import { Description } from '@radix-ui/react-dialog';
+import Image from 'next/image';
 
 export default function AnalyticsComponent() {
   // Line chart data
@@ -143,7 +144,7 @@ export default function AnalyticsComponent() {
               size="icon"
               className="overflow-hidden rounded-full"
             >
-              <img
+              <Image
                 src="/placeholder.svg"
                 width={36}
                 height={36}
@@ -170,10 +171,10 @@ export default function AnalyticsComponent() {
         <main className="flex-1 overflow-y-auto p-4 sm:px-6 sm:py-0 md:p-10">
           {/* Metrics Cards */}
           <div className="flex flex-col gap-4 md:flex-row mt-5">
-            {cardObj && cardObj.map((card: any) => <AnalyticsCard title={card.title} number={card.number} description={card.description} />)}
+            {cardObj && cardObj.map((card: any) => <AnalyticsCard  key={card.id}  title={card.title} number={card.number} description={card.description} />)}
           </div>
           <div className="flex flex-col gap-4 md:flex-row mt-5">
-            {cardObj && cardObj.map((card: any) => <AnalyticsCard title={card.title} number={card.number} description={card.description} />)}
+            {cardObj && cardObj.map((card: any) => <AnalyticsCard  key={card.id}  title={card.title} number={card.number} description={card.description} />)}
           </div>
 
           <div className='flex flex-col gap-2 md:flex-row'>

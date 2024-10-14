@@ -156,7 +156,7 @@ const Integrations = () => {
                         <SelectValue placeholder={`Select ${field.label}`} />
                       </SelectTrigger>
                       <SelectContent>
-                        {field.options.map((option, optIdx) => (
+                        {field && field.options &&  field?.options.map((option, optIdx) => (
                           <SelectItem key={optIdx} value={option}>
                             {option}
                           </SelectItem>

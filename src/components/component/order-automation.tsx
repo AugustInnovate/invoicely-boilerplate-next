@@ -23,6 +23,7 @@ To read more about using these font, please visit the Next.js documentation:
 - App Directory: https://nextjs.org/docs/app/building-your-application/optimizing/fonts
 - Pages Directory: https://nextjs.org/docs/pages/building-your-application/optimizing/fonts
 **/
+import Image from "next/image"
 import Link from "next/link"
 
 export function OrderAutomation() {
@@ -80,7 +81,7 @@ export function OrderAutomation() {
                 </div>
               </div>
             </div>
-            <img
+            <Image
               src="/placeholder.svg"
               width="1270"
               height="300"
@@ -175,7 +176,7 @@ export function OrderAutomation() {
             <div className="divide-y rounded-lg border">
               <div className="grid w-full grid-cols-3 items-stretch justify-center divide-x md:grid-cols-3">
                 <div className="mx-auto flex w-full items-center justify-center p-4 sm:p-8">
-                  <img
+                  <Image
                     src="/placeholder.svg"
                     width="140"
                     height="70"
@@ -184,7 +185,7 @@ export function OrderAutomation() {
                   />
                 </div>
                 <div className="mx-auto flex w-full items-center justify-center p-4 sm:p-8">
-                  <img
+                  <Image
                     src="/placeholder.svg"
                     width="140"
                     height="70"
@@ -193,7 +194,7 @@ export function OrderAutomation() {
                   />
                 </div>
                 <div className="mx-auto flex w-full items-center justify-center p-8">
-                  <img
+                <Image
                     src="/placeholder.svg"
                     width="140"
                     height="70"
@@ -204,7 +205,7 @@ export function OrderAutomation() {
               </div>
               <div className="grid w-full grid-cols-3 items-stretch justify-center divide-x md:grid-cols-3">
                 <div className="mx-auto flex w-full items-center justify-center p-4 sm:p-8">
-                  <img
+                <Image
                     src="/placeholder.svg"
                     width="140"
                     height="70"
@@ -213,7 +214,7 @@ export function OrderAutomation() {
                   />
                 </div>
                 <div className="mx-auto flex w-full items-center justify-center p-4 sm:p-8">
-                  <img
+                <Image
                     src="/placeholder.svg"
                     width="140"
                     height="70"
@@ -222,7 +223,7 @@ export function OrderAutomation() {
                   />
                 </div>
                 <div className="mx-auto flex w-full items-center justify-center p-4 sm:p-8">
-                  <img
+                <Image
                     src="/placeholder.svg"
                     width="140"
                     height="70"
@@ -299,7 +300,7 @@ export function OrderAutomation() {
   )
 }
 
-function Package2Icon(props) {
+function Package2Icon(props:any) {
   return (
     <svg
       {...props}

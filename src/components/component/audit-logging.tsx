@@ -28,6 +28,7 @@ import { Badge } from "@/components/ui/badge"
 import { Pagination, PaginationContent, PaginationItem } from "@/components/ui/pagination"
 import { CartesianGrid, XAxis, Line, LineChart, Pie, PieChart, Bar, BarChart } from "recharts"
 import { ChartTooltipContent, ChartTooltip, ChartContainer } from "@/components/ui/chart"
+import Image from "next/image"
 
 export function AuditLogging() {
   return (
@@ -100,7 +101,7 @@ export function AuditLogging() {
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="outline" size="icon" className="overflow-hidden rounded-full">
-                <img
+                <Image
                   src="/placeholder.svg"
                   width={36}
                   height={36}
@@ -292,7 +293,7 @@ export function AuditLogging() {
   )
 }
 
-function BarchartChart(props) {
+function BarchartChart(props:any) {
   return (
     <div {...props}>
       <ChartContainer
@@ -332,7 +333,7 @@ function BarchartChart(props) {
 }
 
 
-function CheckIcon(props) {
+function CheckIcon(props:any) {
   return (
     <svg
       {...props}
@@ -352,7 +353,7 @@ function CheckIcon(props) {
 }
 
 
-function ChevronLeftIcon(props) {
+function ChevronLeftIcon(props:any) {
   return (
     <svg
       {...props}
@@ -372,7 +373,7 @@ function ChevronLeftIcon(props) {
 }
 
 
-function ChevronRightIcon(props) {
+function ChevronRightIcon(props:any) {
   return (
     <svg
       {...props}
@@ -392,7 +393,7 @@ function ChevronRightIcon(props) {
 }
 
 
-function LayoutDashboardIcon(props) {
+function LayoutDashboardIcon(props:any) {
   return (
     <svg
       {...props}
@@ -415,7 +416,7 @@ function LayoutDashboardIcon(props) {
 }
 
 
-function LinechartChart(props) {
+function LinechartChart(props:any) {
   return (
     <div {...props}>
       <ChartContainer
@@ -458,7 +459,7 @@ function LinechartChart(props) {
 }
 
 
-function LogInIcon(props) {
+function LogInIcon(props:any) {
   return (
     <svg
       {...props}
@@ -480,7 +481,7 @@ function LogInIcon(props) {
 }
 
 
-function MenuIcon(props) {
+function MenuIcon(props:any) {
   return (
     <svg
       {...props}
@@ -502,7 +503,7 @@ function MenuIcon(props) {
 }
 
 
-function Package2Icon(props) {
+function Package2Icon(props:any) {
   return (
     <svg
       {...props}
@@ -524,7 +525,7 @@ function Package2Icon(props) {
 }
 
 
-function PiechartcustomChart(props) {
+function PiechartcustomChart(props:any) {
   return (
     <div {...props}>
       <ChartContainer
@@ -574,7 +575,7 @@ function PiechartcustomChart(props) {
 }
 
 
-function SettingsIcon(props) {
+function SettingsIcon(props:any) {
   return (
     <svg
       {...props}
@@ -595,7 +596,7 @@ function SettingsIcon(props) {
 }
 
 
-function XIcon(props) {
+function XIcon(props:any) {
   return (
     <svg
       {...props}

@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { BarChart, Bell, ChevronDown, CreditCard, DollarSign, LayoutDashboard, Plug, PlusCircle, Settings, Sliders, Users } from "lucide-react"
+import Image from 'next/image'
 
 export default function Component() {
   return (
@@ -79,7 +80,7 @@ export default function Component() {
               <Bell className="h-5 w-5" />
             </Button>
             <Button variant="ghost" className="flex items-center">
-              <img
+              <Image
                 src="/placeholder.svg?height=32&width=32"
                 alt="User avatar"
                 className="w-8 h-8 rounded-full mr-2"

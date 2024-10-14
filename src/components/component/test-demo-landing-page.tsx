@@ -20,6 +20,7 @@ To read more about using these font, please visit the Next.js documentation:
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
+import Image from "next/image"
 
 export function TestDemoLandingPage() {
   return (
@@ -45,7 +46,7 @@ export function TestDemoLandingPage() {
               </Link>
             </div>
           </div>
-          <img
+          <Image
             src="/placeholder.svg"
             width="500"
             height="500"
@@ -89,7 +90,7 @@ export function TestDemoLandingPage() {
         <section className="py-12 md:py-24 lg:py-32 bg-muted">
           <div className="container px-4 md:px-6">
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-              <img
+              <Image
                 src="/placeholder.svg"
                 width="400"
                 height="400"
@@ -97,7 +98,7 @@ export function TestDemoLandingPage() {
                 className="rounded-xl object-cover"
                 style={{ aspectRatio: "400/400", objectFit: "cover" }}
               />
-              <img
+              <Image
                 src="/placeholder.svg"
                 width="400"
                 height="400"
@@ -105,7 +106,7 @@ export function TestDemoLandingPage() {
                 className="rounded-xl object-cover"
                 style={{ aspectRatio: "400/400", objectFit: "cover" }}
               />
-              <img
+              <Image
                 src="/placeholder.svg"
                 width="400"
                 height="400"
@@ -251,7 +252,7 @@ export function TestDemoLandingPage() {
   )
 }
 
-function BoltIcon(props) {
+function BoltIcon(props:any) {
   return (
     <svg
       {...props}
@@ -293,7 +294,7 @@ function GaugeIcon(props:any) {
 }
 
 
-function ShieldIcon(props) {
+function ShieldIcon(props:any) {
   return (
     <svg
       {...props}
